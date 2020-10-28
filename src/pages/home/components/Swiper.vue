@@ -29,6 +29,21 @@ export default {
           imgUrl:
             "http://imgs.qunarzz.com/vs_ceph_vcimg/1cfbdaa2682ada2f854ea6114b3677c8.jpeg",
         },
+        {
+          id: "0003",
+          imgUrl:
+            "http://imgs.qunarzz.com/vs_ceph_vcimg/569cae4ae98e9793f7341e85eed73c54.jpeg",
+        },
+        {
+          id: "0004",
+          imgUrl:
+            "http://imgs.qunarzz.com/vs_ceph_vcimg/b8c4527c41649814cc4cf86880abba54.jpeg",
+        },
+        {
+          id: "0005",
+          imgUrl:
+            "http://imgs.qunarzz.com/vs_ceph_vcimg/56ad7891af78b372fbe9dac94cb0ce54.jpeg",
+        },
       ],
     };
   },
