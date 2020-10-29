@@ -63,9 +63,14 @@ export default {
     ...mapMutations(["changeCity"]),
   },
   mounted() {
-    this.scroll = new BetterScroll(this.$refs.wrapper);
+    this.scroll = new BetterScroll(this.$refs.wrapper, {
+      click: true,
+    });
   },
   updated() {
+    this.scroll.refresh();
+  },
+  activated() {
     this.scroll.refresh();
   },
   watch: {
