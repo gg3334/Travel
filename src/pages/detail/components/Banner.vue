@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="" alt="" />
+      <img class="banner-img" :src="info.bannerImg" alt="" />
       <div class="banner-info">
-        <div class="banner-title">123</div>
+        <div class="banner-title">{{ info.sightName }}</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe8ba;</span>345
+          <span class="iconfont banner-icon">&#xe8ba;</span
+          >{{ info.gallaryImgs.length }}
         </div>
       </div>
     </div>
@@ -22,11 +23,19 @@ import CommonGallary from "common/gallary/Gallary";
 
 export default {
   name: "DetailBanner",
+  props: {
+    info: Object,
+  },
   data() {
     return {
       showGallary: false,
-      imgs: [],
+      // imgs: this.info.gallaryImgs,
     };
+  },
+  computed: {
+    imgs() {
+      return this.info.gallaryImgs;
+    },
   },
   components: {
     CommonGallary,
