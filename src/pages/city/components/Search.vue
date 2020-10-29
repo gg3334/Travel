@@ -78,7 +78,9 @@ export default {
     },
   },
   mounted() {
-    this.scroll = new BetterScroll(this.$refs.search);
+    this.scroll = new BetterScroll(this.$refs.search, {
+      click: true,
+    });
   },
   updated() {
     this.scroll.refresh();

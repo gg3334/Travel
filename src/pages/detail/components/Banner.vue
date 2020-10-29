@@ -5,8 +5,7 @@
       <div class="banner-info">
         <div class="banner-title">{{ info.sightName }}</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe8ba;</span
-          >{{ info.gallaryImgs.length }}
+          <span class="iconfont banner-icon">&#xe8ba;</span>
         </div>
       </div>
     </div>
